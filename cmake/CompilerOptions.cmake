@@ -18,7 +18,7 @@ function(_add_warnings TargetName)
         -Wduplicated-cond
         -Wlogical-op
         -Wsuggest-override
-        -Wuseless-cast
+        # -Wuseless-cast => is generated in Qt moc_ files up until Qt 6.4/6.5
     )
 
     if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
